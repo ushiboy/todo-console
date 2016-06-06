@@ -1,4 +1,4 @@
-import { match } from './lib/router';
+import { match, navigate } from './lib/router';
 import routes from './routes';
 
 import React from 'react';
