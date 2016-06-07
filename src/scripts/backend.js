@@ -1,12 +1,17 @@
-import { match, navigate } from './lib/router';
+import { Router } from './lib/router';
 import routes from './routes';
 
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
+
 export default function application(request) {
   const { url, headers } = request;
-  const matched = match(url, routes);
+  const router = new Router(routes, promise => {
+
+  });
+
+  router.navigate(url);
   if (matched) {
     return [index(renderToString(<matched.handler />)), 200];
   }
