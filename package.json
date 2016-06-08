@@ -7,7 +7,8 @@
     "babel-node": "babel-node",
     "gulp": "gulp",
     "start": "gulp default",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "test": "mocha test/**/*-test.js"
   },
   "author": "",
   "license": "MIT",
@@ -28,6 +29,7 @@
     "del": "^2.2.0",
     "eslint": "^2.11.1",
     "eslint-plugin-react": "^5.1.1",
+    "espower-babel": "^4.0.3",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-livereload": "^3.8.1",
@@ -35,6 +37,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-util": "^3.0.7",
     "http-proxy-middleware": "^0.15.2",
+    "mocha": "^2.5.3",
+    "power-assert": "^1.4.1",
     "serve-static": "^1.10.3",
     "webpack": "^1.13.1"
   }
